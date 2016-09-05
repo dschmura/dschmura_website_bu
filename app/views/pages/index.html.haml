@@ -1,0 +1,25 @@
+= render 'pages/intro'
+= render 'pages/features'
+= render 'pages/news_letter'
+= render 'pages/showcase'
+= render 'pages/quote'
+= render 'pages/blog'
+= render 'pages/contact'
+
+
+
+
+
+-# = javascript_include_tag 'scripts-min'
+= javascript_include_tag 'headroom.min'
+= javascript_include_tag 'jquery.fitvids'
+= javascript_include_tag 'jquery.flexslider'
+= javascript_include_tag 'jquery.headroom'
+= javascript_include_tag 'jquery.stellar.min'
+= javascript_include_tag 'owl.carousel'
+= javascript_include_tag 'scripts'
+
+:javascript
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });

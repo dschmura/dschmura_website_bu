@@ -1,0 +1,13 @@
+/ ///// NEWSLETTER SECTION /////
+%section.newsletter
+  .image-bg{"data-stellar-background-ratio" => "0.5"}
+  .color-overlay
+  .container
+    .nl-text
+      %p Want to be the first to be notified when we're releasing a cool new product? Sign up here, we won't spam!
+    .nl-form
+      / newsletter form
+      %form#newsletter{:novalidate => ""}
+        %input#e-mail{:name => "e-mail", :placeholder => "Your e-mail address", :required => "", :type => "email"}/
+        %input.button{:type => "submit", :value => "Submit"}/
+      #newsletter-error

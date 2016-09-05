@@ -1,0 +1,44 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+
+
+$highlight: #3A5AA0;
+
+@import "font-awesome";
+@media(max-width:34em) {
+  .navbar .navbar-nav>.nav-item {
+      float: none;
+      margin-left: .1rem;
+  }
+  .navbar .navbar-nav {
+      float:none !important;
+  }
+  .navbar .collapse.in, .navbar .collapsing  {
+      clear:both;
+  }
+}
+
+@import 'partials/pipeline';
+$parallax-intro-url:    url('http://placehold.it/1200x700&text=use+your+image+here') 0 0 no-repeat;
+$parallax-newsletter-url: url('http://placehold.it/1200x700&text=use+your+image+here') 0 0 no-repeat;
+$parallax-quote-url:    url('http://placehold.it/1200x700&text=use+your+image+here') 0 0 no-repeat;
+
+
+@import "partials/partials";
+
+
+@import "bourbon";
+@import "base/base";
+@import "neat";

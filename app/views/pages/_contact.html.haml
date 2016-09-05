@@ -1,0 +1,29 @@
+/ ///// CONTACT SECTION /////
+%section#section-contact.contact
+  .container
+    .title
+      %h2 Contact
+      %hr.small/
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    .contact-form
+      / contact form
+      %form#contact-form{:novalidate => ""}
+        .form
+          .form-left
+            %p
+              %label{:for => "name"} Name
+              %input#name{:name => "name", :placeholder => "Name...", :type => "text"}/
+            %p
+              %label{:for => "email"} Email
+              %input#email{:name => "email", :placeholder => "E-mail...", :type => "email"}/
+            %p
+              %label{:for => "phone"} Phone
+              %input#phone{:name => "phone", :placeholder => "Phone number...", :type => "text"}/
+          .form-right
+            %p
+              %label{:for => "message"} Message
+              %textarea#message{:name => "message", :placeholder => "Your message...", :rows => "10"}
+        #contact-error
+        %p.submit
+          %input.button{:type => "submit", :value => "Submit"}/
+      / end form

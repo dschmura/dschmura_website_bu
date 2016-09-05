@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}
+
+
+
+    %title Dave Chmura 
+    = csrf_meta_tags
+    = action_cable_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'
+
+  %body#page-top{"data-spy" => "scroll", "data-target" => "#mainNav"} 
+    = render 'layouts/header_nav'
+    //= render 'layouts/test'
+    
+    = yield
+    = render 'pages/footer'
