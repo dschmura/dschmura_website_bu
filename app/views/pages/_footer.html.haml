@@ -10,11 +10,13 @@
         %a{:href => "#"}
           %i.fa.fa-facebook
       %li
-        %a{:href => "#"}
+        %a{:href => "https://twitter.com/humbledaisy", target: :blank}
           %i.fa.fa-twitter
       %li
-        %a{:href => "#"}
-          %i.fa.fa-google-plus
+        %a{:href => "http://lnkd.in/VuU9xY"}
+          %i.fa.fa-linkedin
       %li
         %a{:href => "#"}
           %i.fa.fa-instagram
+      %li
+        = mail_to("dschmura@humbledaisy.com", "", subject: "ManonaM", encode: :javascript, class: "fa fa-envelope fa-3x wow bounceIn connect_icons", "data-original-title" => "Send me an email, if you must.", rel: :tooltip, "data-placement" => :bottom)     
