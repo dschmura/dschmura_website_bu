@@ -1,5 +1,5 @@
 = render 'pages/intro'
-= render 'pages/features'
+= render 'pages/skills'
 = render 'pages/news_letter'
 = render 'pages/showcase'
 = render 'pages/quote'
@@ -21,5 +21,22 @@
 
 :javascript
   $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
+  
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoPlay: 1000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+    })
   });

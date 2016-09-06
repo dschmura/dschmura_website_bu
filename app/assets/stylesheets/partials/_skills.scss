@@ -1,7 +1,7 @@
 
-.features {
+.skills {
 
-	.feature-item {
+	.skill-item {
 		@include media($large-screen-up) {
 			@include span-columns(4);
 			@include omega(3n);	
