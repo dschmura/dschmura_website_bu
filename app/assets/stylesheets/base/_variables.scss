@@ -24,6 +24,11 @@ $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip
 $heading-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
 
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
 // Other Sizes
 $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1;
@@ -31,12 +36,13 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
+$highlight: #4C749D; 
 $highlight-color: #79A092;
 $highlight-2: #f39c12; 
 $blue: #477DCA;
 $dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #DDD;
+$light-gray: #ddd;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
@@ -44,7 +50,7 @@ $light-green: #E6EFC2;
 // Font Colors
 $base-font-color: $dark-gray;
 $base-accent-color: $highlight-color;
-$action-color: $base-accent-color;
+$action-color: $blue;
 
 // Link Colors
 $base-link-color: $base-accent-color;
