@@ -3,11 +3,11 @@ section.intro {
 	padding: 0;
 	color: white;
 	text-transform: uppercase;
-
+	max-height: 700px;
 	.image-bg {
 		background: $parallax-intro-url;
 				// url('../img/nz-road.jpg') no-repeat;
-			background-image: url('DavePics/hug.jpg');
+			// background-image: url('DavePics/hug.jpg');
 		background-size: cover;
 	}
 

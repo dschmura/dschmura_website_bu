@@ -1,10 +1,10 @@
-/ ///// SHOWCASE SECTION /////
-%section#section-showcase.showcase
+/ ///// portfolio SECTION /////
+%section#section-portfolio.portfolio
   .container
     .title
-      %h2 Showcase
+      %h2 portfolio
       %hr.small/
-      %p Words are nice and all, but come on.. Time for some visual proof!
+      %p Let's see some of the things I've been doing.
     / image slider
     .split
       .split-left.split-text
@@ -16,26 +16,28 @@
           jQuery plugin.
         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, amet, perspiciatis. Ullam dolor repellat molestias quisquam commodi distinctio nam hic ratione architecto!
         %p Fugiat, expedita dolore consequuntur ducimus nulla ex maxime.
-        %a.button.large{:href => "http://themeforest.net/user/simonswiss/portfolio"} Buy This Template
+        %a.button.large{:href => "../resume"} Resume
         \ 
-        %a.button.large.alt{:href => "#section-contact"} Get in Touch
+        %a.button.large.alt{:href => "#section-contact"} Full Portfolio
 
       .split-right.split-media
-        #showcase-slider.owl-carousel.owl-theme
+        #portfolio-slider.scroller
           / slider items
           .item
-            = image_tag("DavePics/davechmura_aboutme.png") 
+
+            = render 'card'
+            
+          .item
+            = image_tag("http://placehold.it/1200x700&text=use+your+image+here")
           .item
             = image_tag("DavePics/davechmura_aboutme.png")
-          .item
-            = image_tag("DavePics/davechmura_aboutme.png")
-%section.showcase.gray
+%section.portfolio.gray
   .container
     / video example
     .split
       .split-left.split-text.float-right
         %h4 Video Presentation
-        %p.lead What better ways to showcase your products and services than using a presentation video?
+        %p.lead What better ways to portfolio your products and services than using a presentation video?
         %p
           While you're at it, here's a nice little introduction to the awesome
           %a{:href => "http://neat.bourbon.io/", :target => "_blank"} Bourbon Neat framework
@@ -45,7 +47,7 @@
         .fitvids
           / responsive video iframe
           %iframe{:allowfullscreen => "", :height => "315", :src => "http://www.youtube.com/embed/P8wyUq5Z3Kw", :width => "560"}
-%section.showcase
+%section.portfolio
   .container
     / single image example
     .split
@@ -57,3 +59,6 @@
       .split-right.split-media
         / insert your image here
         = image_tag("DavePics/davechmura_aboutme.png")
+
+
+        

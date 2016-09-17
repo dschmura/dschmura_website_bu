@@ -1,8 +1,9 @@
 /* ====================
 3. OWL CAROUSEL + FLEXSLIDER STYLES 
 ==================== */
-@import 'partials/owl-flexslider';
-@import 'partials/owl-theme';
+// @import 'partials/owl-flexslider';
+// @import 'partials/owl-theme';
+
 
 /* ====================
 4. TEMPLATE GLOBAL STYLES 
@@ -27,7 +28,7 @@
 /* ====================
 9. SHOWCASE SECTION
 ==================== */
-@import 'partials/showcase';
+@import 'partials/portfolio';
 /* ====================
 10. QUOTE / TESTIMONIALS
 ==================== */
@@ -44,3 +45,12 @@
 13. FOOTER
 ==================== */
 @import 'partials/footer';
+/* ====================
+14. PROJECT CARDS 
+==================== */
+// @import 'partials/project_cards';
+
+/* ====================
+15. Intro Text 
+==================== */
+@import 'partials/intro_text';

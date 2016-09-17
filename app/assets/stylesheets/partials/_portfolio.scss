@@ -1,9 +1,9 @@
 
-#section-showcase {
+#section-portfolio {
 	padding: 6em 0 5em;
 }
 
-.showcase {
+.portfolio {
 	padding: 1em 0 5em;
 
 	.split {
@@ -41,7 +41,7 @@
 
 		.split-media {
 
-			#showcase-slider .item img{
+			#portfolio-slider .item img{
 			    display: block;
 			    width: 100%;
 			    height: auto;
@@ -57,6 +57,6 @@
 	}
 }
 
-.showcase.gray {
+.portfolio.gray {
 	background: darken(white, 5%);
 }

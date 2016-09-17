@@ -5,18 +5,18 @@
       Copyright © 2016
       %a{:href => "index.html"} David Chmura
       \- All Rights Reserved.
+      %br
+      = link_to "Privacy Policy", privacy_path, target: "_blank"
     %ul.social
-      %li
-        %a{:href => "#"}
-          %i.fa.fa-facebook
+      -# %li
+      -#   %a{:href => "#"}
+      -#     %i.fa.fa-facebook
       %li
         %a{:href => "https://twitter.com/humbledaisy", target: :blank}
           %i.fa.fa-twitter
       %li
         %a{:href => "http://lnkd.in/VuU9xY"}
           %i.fa.fa-linkedin
-      %li
-        %a{:href => "#"}
-          %i.fa.fa-instagram
+  
       %li
         = mail_to("dschmura@humbledaisy.com", "", subject: "ManonaM", encode: :javascript, class: "fa fa-envelope fa-3x wow bounceIn connect_icons", "data-original-title" => "Send me an email, if you must.", rel: :tooltip, "data-placement" => :bottom)     

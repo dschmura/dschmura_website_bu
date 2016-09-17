@@ -2,7 +2,8 @@
 %header#navigation.navigation.headroom
   .navigation-wrapper
     / logo - you can put yours here
-    %a.logo{:href => "index.html"}
+
+    %a.logo{:href => "../#section-intro"}
       %img{:alt => "logo", :src => "../assets/DavePics/Charac.gif"}
     / mobile menu toggle
     %a#js-mobile-menu.navigation-menu-button{:href => ""} MENU
@@ -10,33 +11,35 @@
     .nav
       %ul#navigation-menu
         %li.nav-link.active
-          %a{:href => "#section-intro"} Home
+          %a{:href => "../#section-intro"} Home
         %li.nav-link
-          %a{:href => "#section-skills"} Skills
+          %a{:href => "../#section-skills"} Skills
         %li.nav-link
-          %a{:href => "#section-showcase"} Showcase
+          %a{:href => "../#section-portfolio"} Portfolio
         %li.nav-link
-          %a{:href => "#section-blog"} Blog
+          =link_to "Resume", resume_path
+        -# %li.nav-link
+        -#   %a{:href => "../#section-blog"} Blog
         %li.nav-link
-          %a{:href => "#section-contact"} Contact
-        %li.nav-link.more
-          %a{:href => "javascript:void(0)"} More
-          %ul.submenu
-            %li
-              %a{:href => "javascript:void(0)"} Submenu Item
-            %li
-              %a{:href => "javascript:void(0)"} Another Item
-            %li.more
-              %a{:href => "javascript:void(0)"} Item with submenu
-              %ul.submenu
-                %li
-                  %a{:href => "javascript:void(0)"} Sub-submenu Item
-                %li
-                  %a{:href => "javascript:void(0)"} Another Item
-            %li.more
-              %a{:href => "javascript:void(0)"} Another submenu
-              %ul.submenu
-                %li
-                  %a{:href => "javascript:void(0)"} Sub-submenu
-                %li
-                  %a{:href => "javascript:void(0)"} An Item
+          %a{:href => "../#section-contact"} Contact
+        -# %li.nav-link.more
+        -#   %a{:href => "javascript:void(0)"} More
+        -#   %ul.submenu
+        -#     %li
+        -#       %a{:href => "javascript:void(0)"} Submenu Item
+        -#     %li
+        -#       %a{:href => "javascript:void(0)"} Another Item
+        -#     %li.more
+        -#       %a{:href => "javascript:void(0)"} Item with submenu
+        -#       %ul.submenu
+        -#         %li
+        -#           %a{:href => "javascript:void(0)"} Sub-submenu Item
+        -#         %li
+        -#           %a{:href => "javascript:void(0)"} Another Item
+        -#     %li.more
+        -#       %a{:href => "javascript:void(0)"} Another submenu
+        -#       %ul.submenu
+        -#         %li
+        -#           %a{:href => "javascript:void(0)"} Sub-submenu
+        -#         %li
+        -#           %a{:href => "javascript:void(0)"} An Item

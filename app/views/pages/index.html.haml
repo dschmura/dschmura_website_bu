@@ -1,13 +1,11 @@
 = render 'pages/intro'
+= render 'pages/intro_text'
 = render 'pages/skills'
 = render 'pages/news_letter'
-= render 'pages/showcase'
+= render 'pages/portfolio'
 = render 'pages/quote'
 = render 'pages/blog'
 = render 'pages/contact'
-
-
-
 
 
 -# = javascript_include_tag 'scripts-min'
@@ -16,27 +14,33 @@
 = javascript_include_tag 'jquery.flexslider'
 = javascript_include_tag 'jquery.headroom'
 = javascript_include_tag 'jquery.stellar.min'
-= javascript_include_tag 'owl.carousel'
-= javascript_include_tag 'scripts'
+-# = javascript_include_tag 'owl.carousel.min'
+= javascript_include_tag 'scripts-min'
+= javascript_include_tag 'slick.min'
 
 :javascript
-  $(document).ready(function(){
-  
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    autoPlay: 1000,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-    })
+  $().ready(function(){
+      $('[rel="tooltip"]').tooltip();
+      
+      $('a.scroll-down').click(function(e){
+          e.preventDefault();
+          scroll_target = $(this).data('href');
+           $('html, body').animate({
+               scrollTop: $(scroll_target).offset().top - 60
+           }, 1000);
+      });
+
   });
+  
+
+
+:javascript
+  function rotateCard(btn){
+      var $card = $(btn).closest('.card-container');
+      console.log($card);
+      if($card.hasClass('hover')){
+          $card.removeClass('hover');
+      } else {
+          $card.addClass('hover');
+      }
+  }

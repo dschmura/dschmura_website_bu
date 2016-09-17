@@ -1,0 +1,162 @@
+
+
+
+/* entire container, keeps perspective
+
+.card-container
+  @include perspective(800px)
+  @include outer-container(75%)
+
+ 
+  &:not(.manual-flip):hover .card, &.hover.manual-flip .card
+    @include transform(rotateY(180deg))
+  &.static
+    &:hover .card, &.hover .card
+      @include transform(none)
+
+/* flip the pane when hovered
+
+/* flip speed goes here
+
+.card
+  @include transition(all 0.5s ease-in-out)
+  @include transform-style(preserve-3d)
+  position: relative
+/* hide back of pane during swap
+
+.card_front, .card_back
+  @include backface-visibility(hidden)
+  position: absolute
+  top: 0
+  left: 0
+  background-color: #FFF
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14)
+
+/* front pane, placed above back
+.card_front
+  z-index: 2
+
+/* back, initially hidden pane
+
+.card_back
+  @include transform(rotateY(180deg))
+  z-index: 3
+  .btn-simple
+    position: absolute
+    left: 0
+    bottom: 4px
+
+/*        Style
+
+
+.card-container, .front, .back
+  width: 100%
+  height: 420px
+  border-radius: 4px
+
+.card
+  background: none repeat scroll 0 0 #FFFFFF
+  border-radius: 4px
+  color: #444444
+  .cover
+    height: 75px
+    overflow: hidden
+    border-radius: 4px 4px 0 0
+    background-color: #395372
+
+  .brief
+    height: 100px
+    background-color: #66FFFF
+    overflow: hidden
+    font-size: 0.7em
+  .project
+    
+    display: block
+    margin: -65px auto 0
+    overflow: hidden
+    width: 120px
+
+    img
+      @include border-top-radius(50%)
+      @include border-bottom-radius(50%)
+      background: none repeat scroll 0 0 #FFFFFF
+      border: 4px solid #FFFFFF
+      width: 100%
+      height: 300px
+      max-height: 300px
+  .project_main
+    @include outer-container(100%)
+    @include span-columns(12)
+  .back .project_content .main
+    height: 215px
+  
+  .project_title
+    text-align: center
+    text-transform: capitalize
+  
+  .project_platforms
+    text-align: center
+    @include span-columns(12)
+    width: 100%
+    clear: both
+    li
+      float: left
+      font-size: 0.8em
+      @include margin(0.5em 1em null null)
+
+  .project_roles
+    @include span-columns(12)
+    font-size: 0.8em 
+
+  .project_skills
+    .label
+      margin-top: 5px  
+      font-size: 0.7em
+    
+
+  .project_sub_title
+    font-size: 0.8em
+    color: #999999
+    text-align: center
+ 
+  .project_footer
+    @include row()
+    border-top: 1px solid #EEEEEE
+    color: #999999
+    margin: 10px 0 0
+    padding: 10px 0 0
+    text-align: center
+    clear: both
+    .social-links
+      font-size: 1em
+      a
+        margin: 0 7px
+    button
+      font-size: 0.8em    
+
+  .project_header
+    
+  .motto
+    border-bottom: 1px solid #EEEEEE
+    color: #999999
+    font-size: 1.2em
+    font-weight: 400
+    padding-bottom: 10px
+    text-align: center
+
+
+/*      Just for presentation
+
+.project_title
+  color: #506A85
+  text-align: center
+  font-weight: 300
+  font-size: 44px
+  line-height: 90%
+  small
+    font-size: 17px
+    color: #999
+    text-transform: uppercase
+    margin: 0
+
+

@@ -12,10 +12,8 @@
  *
 
  */
-
-
-$highlight: #3A5AA0;
-
+$highlight: #4C749D;
+// $visual-grid: true;
 @import "font-awesome";
 @media(max-width:34em) {
   .navbar .navbar-nav>.nav-item {
@@ -31,7 +29,7 @@ $highlight: #3A5AA0;
 }
 
 @import 'partials/pipeline';
-$parallax-intro-url:    url('http://placehold.it/1200x700&text=use+your+image+here') 0 0 no-repeat;
+$parallax-intro-url:    url('DavePics/hug.jpg') 0 0 no-repeat;
 $parallax-newsletter-url: url('http://placehold.it/1200x700&text=use+your+image+here') 0 0 no-repeat;
 $parallax-quote-url:    url('http://placehold.it/1200x700&text=use+your+image+here') 0 0 no-repeat;
 
@@ -39,6 +37,29 @@ $parallax-quote-url:    url('http://placehold.it/1200x700&text=use+your+image+he
 @import "partials/partials";
 
 
-@import "bourbon";
-@import "base/base";
-@import "neat";
+// @import "bourbon";
+// @import "base/base";
+// @import "neat";
+@import 'slick';
+@import 'slick-theme';
+@import 'profile_cards';
+@import 'resume';
+
+.scroller {
+  div {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+.slick-prev::before, .slick-next::before {
+  color: #000;
+}
+
+.slick-next {
+  right: -5px;
+}
+
+.slick-prev {
+  left: -5px;
+}

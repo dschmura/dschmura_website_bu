@@ -1,0 +1,4 @@
+.intro_text {
+  @include outer-container(85%);
+  @include margin(1em null null null)
+}

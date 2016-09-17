@@ -1,0 +1,51 @@
+
+.card-container.manual-flip{:onclick => "rotateCard(this)"}
+  .card
+    .card_front
+      .cover
+      .project
+        = image_tag('DavePics/hug.jpg', class: 'img-circle center-block')
+
+      .project_main
+        .project_title Project Title
+        .project_sub_title Project Sub Title
+        .brief
+          =truncate("Project Brief...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", :length => 140)
+          
+        .project_platforms  
+          %ul
+            %li project platform
+            %li project platform
+            %li.fa.fa-fighter-jet
+        .project_roles 
+          %ul
+            %li project role
+            %li project role
+
+      .project_footer
+        %button.alt{:onclick => "rotateCard(manual-flip)"}
+          %i.fa.fa-mail-forward
+          Details
+    / end front panel
+    .card_back
+      .project_header
+        .motto "Delete all the code"
+      .project_content
+        .main
+          .text-center Brief
+          %p Discover classrooms for teaching
+          .project_skills.text-center Areas of Expertise
+          %p Web design, Graphic Design, UX, HTML5, CSS3, Javascript, Ruby, Rails, Ember and many others...
+      .project_footer
+        %button{"data-original-title" => "Flip Card", :onclick => "rotateCard(manual-flip)", :rel => "tooltip", :title => ""}
+          %i.fa.fa-reply
+          Back
+        .social-links.text-center
+          %a.home{:href => "https://www.lsa.umich.edu/facstaff/mis", :target => "_blank"}
+            %i.fa.fa-home.fa-fw
+          %a.github{:href => "http://github.com/dschmura", :target => "_blank"}
+            %i.fa.fa-github.fa-fw
+          %a.bitbucket{:href => "https://bitbucket.org/dchmura/", :target => "_blank"}
+            %i.fa.fa-bitbucket.fa-fw
+          %a.twitter{:href => "http://twitter.com/humbledaisy", :target => "_blank"}
+            %i.fa.fa-twitter.fa-fw
